@@ -71,5 +71,6 @@
 toplevel MY_XOR(ARCH)
 toplevel MUX4T1_TB(ARCH)
 toplevel DEC2T4_TB(ARCH)
+toplevel FULL_ADDER_4(ARCH)
 
 
