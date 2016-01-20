@@ -3,6 +3,45 @@
 #
 # This is basically zamiaCAD's equivalent of a Makefile.
 
+# 0- Project Lib (Components) are in lib.vhd
+
+# 1- Register File
+toplevel WORK.MUX4X4(LOGIC);
+toplevel WORK.DCD3X8(LOGIC);
+
+toplevel WORK.REG8(LOGIC);
+toplevel WORK.REG8X16(LOGIC);
+
+# 2- ALU
+toplevel WORK.ADD4(LOGIC);
+toplevel WORK.BWAND4(LOGIC);
+toplevel WORK.BWOR4(LOGIC);
+toplevel WORK.PINV4(LOGIC);
+
+toplevel WORK.ALU4(LOGIC);
+toplevel WORK.ALU16(LOGIC);
+
+# 3- I-Types
+toplevel WORK.ADD16(LOGIC);
+toplevel WORK.INCTWO(LOGIC);
+toplevel WORK.SGNEXT6X16(LOGIC);
+
+toplevel WORK.INS_MEM(LOGIC);
+toplevel WORK.DAT_MEM(LOGIC);
+
+# 4- Control Path & Branch
+toplevel WORK.SHLONE(LOGIC);
+toplevel WORK.MUX3X16(LOGIC);
+toplevel WORK.MUX2X16(LOGIC);
+toplevel WORK.MUX2X3(LOGIC);
+
+toplevel WORK.PCJMP(LOGIC);
+
+# 5- Data Path
+toplevel WORK.PC(LOGIC);
+toplevel WORK.FTS(LOGIC);
+
+
 #
 # Entry format (simplified):
 #
@@ -66,22 +105,3 @@
 # format: [ <LIBRARY> '.' ] <ENTITY [ '(' <ARCHITECTURE> ')' ]
 # toplevel WORK.LEON3MP(RTL)
 # toplevel LEON3S
-
-# Register File
-toplevel WORK.REG8(LOGIC);
-toplevel WORK.MUX4X4(LOGIC);
-toplevel WORK.DCD3X8(LOGIC);
-toplevel WORK.REG8X16(LOGIC);
-
-# ALU
-toplevel WORK.ADD4(LOGIC);
-toplevel WORK.BWAND4(LOGIC);
-toplevel WORK.BWOR4(LOGIC);
-toplevel WORK.PINV4(LOGIC);
-toplevel WORK.ALU4(LOGIC);
-toplevel WORK.ALU16(LOGIC);
-
-# I-Types
-toplevel WORK.ADD16(LOGIC);
-toplevel WORK.INCTWO(LOGIC);
-toplevel WORK.INS_MEM(LOGIC);

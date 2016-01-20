@@ -1,3 +1,6 @@
+-- FTS
+-- FTS Module
+
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE work.lib.all;
@@ -5,9 +8,9 @@ USE work.lib.all;
 ENTITY fts IS
 	PORT( hexin :IN STD_LOGIC_VECTOR(0 TO 3);
 			dispout :OUT STD_LOGIC_VECTOR(0 TO 6));
-END fts;
+END;
 
-ARCHITECTURE Structure OF fts IS
+ARCHITECTURE logic OF fts IS
 BEGIN
 	PROCESS(hexin)
 	BEGIN
@@ -60,4 +63,4 @@ BEGIN
 			dispout <= "0111000";
 		END IF;
 	END PROCESS;
-END Structure;
+END;

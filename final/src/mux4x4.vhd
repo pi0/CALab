@@ -1,5 +1,5 @@
 -- MUX4x4
--- 4x4 MUX
+-- 4 input, 4-bit multiplexer
 
 library ieee;
 use ieee.std_logic_1164.all;

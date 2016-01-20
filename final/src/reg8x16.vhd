@@ -34,6 +34,7 @@ begin
 
 	-- Registers : each line consists of two REG8 components, output is stored in oi
 
+	-- Note: According to Data Path And Control Unit,register 0 should always read zero.
 	R00: REG8 port map("00000000", ena(0) and WE, CLK, o0(7 downto 0)); --reg0/o0
 	R01: REG8 port map("00000000", ena(0) and WE, CLK, o0(15 downto 8));
 	

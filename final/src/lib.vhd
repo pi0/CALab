@@ -1,3 +1,7 @@
+-- LIB
+-- Project Lib (Components) 
+-- Usage: USE work.lib.all;
+
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -136,4 +140,5 @@ package lib is
 		PORT( hexin :IN STD_LOGIC_VECTOR(0 TO 3);
 				dispout :OUT STD_LOGIC_VECTOR(0 TO 6));
 	end component;
-end lib;
+	
+end ;

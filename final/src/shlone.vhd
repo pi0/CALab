@@ -1,3 +1,6 @@
+-- SHLONE
+-- Shift 16bit input left by one
+
 library ieee;
 use ieee.std_logic_1164.all;
 use work.lib.all;
@@ -5,12 +8,11 @@ use work.lib.all;
 entity shlone is
 	port (DIN : in std_logic_vector(15 downto 0);
 			DOUT : out std_logic_vector(15 downto 0));
-end shlone;
+end;
 
-architecture Logic of shlone is
-
+architecture logic of shlone is
 begin
 
-DOUT<=DIN(14 downto 0)&'0';
+DOUT<=DIN(14 downto 0)&'0'; -- Shift Left
 
-end Logic;
+end;
