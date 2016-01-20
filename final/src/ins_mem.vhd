@@ -28,11 +28,10 @@ begin
 	inputstruct(1) <= "1011111011000010";  -- lw r3, 0x102
 	inputstruct(2) <= "0000010011001010";  -- add r1, r2, r3
 	inputstruct(3) <= "1111111001000100";  -- sw r1, 0x104
-	inputstruct(4) <= "1011111001000100";  -- print r1
-	inputstruct(5) <= "0000010011100110";  -- sub r4, r2, r3
-	inputstruct(6) <= "0100001100000001";  -- beq r1, r4, 8
-	inputstruct(7) <= "0000001100001110";  -- sub r1, r1, r4
-	inputstruct(8) <= "1111111001000110";  -- sw r1, 0x106
+	inputstruct(4) <= "0000010011100110";  -- sub r4, r2, r3
+	inputstruct(5) <= "0100001100000001";  -- beq r1, r4, 8
+	inputstruct(6) <= "0000001100001110";  -- sub r1, r1, r4
+	inputstruct(7) <= "1111111001000110";  -- sw r1, 0x106
 	
 	DOUT <= inputstruct(to_integer(unsigned(DIN)));
 	

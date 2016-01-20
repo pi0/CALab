@@ -5,6 +5,8 @@
 -- ALU4
 -- 4Bit ALU Unit 
 
+
+
 library ieee;
 use ieee.std_logic_1164.all;
 use work.lib.all;
@@ -25,15 +27,24 @@ signal c0, c1 : std_logic;
 
 begin
 
+-- ADD 010   s0
+-- OR  001   s1
+-- AND 000   s2
+-- SUB 110   s3
+-- INV       s4
+
+
+
 -- Basic Components
 
 cADD: ADD4 port map(A, B, CIN, s0, c0);
 cOR: BWOR4 port map(A, B, s1);
 cAND: BWAND4 port map(A, B, s2);
+
 cINV1: PINV4 port map(B, SEL(2), s4);
 cSUB: ADD4 port map(A, s4, CIN, s3, c1);
 
--- ??
+-- 
 
 process(LESS, s3, s6)
 begin
@@ -47,9 +58,9 @@ begin
 end process;
 
 -- Select Operation using MUX4
-
-MUX0: MUX4X4 port map(SEL(1) & (SEL(2) or SEL(0)), s2, s1, s0, s3, s5);
-MUX1: MUX4X4 port map('0' & (SEL(2) and SEL(0)), s5, s6, "0000", "0000", s7);
+-- SEL: ABC
+MUX0: MUX4X4 port map(SEL(1) & (SEL(2) or SEL(0)), s2, s1, s0, s3, s5); --A(B|C)
+MUX1: MUX4X4 port map('0' & (SEL(2) and SEL(0)), s5, s6, "0000", "0000", s7); 
 
 -- Carry Out
 

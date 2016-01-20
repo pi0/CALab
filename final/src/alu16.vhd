@@ -21,7 +21,7 @@ architecture logic of alu16 is
 
 -- C: carry out
 -- O: ovrrflow
--- S: set ?
+-- S: set
 -- Z: zero
 -- L: junk!
 signal C, O, S : std_logic_vector(2 downto 0);
