@@ -39,7 +39,6 @@ toplevel WORK.PCJMP(LOGIC);
 
 # 5- Data Path
 toplevel WORK.PC(LOGIC);
-toplevel WORK.FTS(LOGIC);
 
 
 #
