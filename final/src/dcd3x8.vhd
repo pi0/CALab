@@ -1,3 +1,7 @@
+-- A Part of AUT-MIPS Project
+-- Contributers: Pooya Parsa <pooya@pi0.ir>, Javad Hashemi
+-- Released Under GNU General Public License GPL V3
+
 -- DCD3x8
 -- 3-to-8 decoder
 

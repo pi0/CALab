@@ -1,3 +1,7 @@
+-- A Part of AUT-MIPS Project
+-- Contributers: Pooya Parsa <pooya@pi0.ir>, Javad Hashemi
+-- Released Under GNU General Public License GPL V3
+
 -- INS_MEM
 -- Instructions Memory
 -- Contains 32 Lines of 16 bit instructions

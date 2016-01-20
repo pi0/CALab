@@ -1,3 +1,7 @@
+-- A Part of AUT-MIPS Project
+-- Contributers: Pooya Parsa <pooya@pi0.ir>, Javad Hashemi
+-- Released Under GNU General Public License GPL V3
+
 -- MUX3X16
 -- 2 input, 16-bit multiplexer
 

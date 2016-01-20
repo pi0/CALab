@@ -1,3 +1,7 @@
+-- A Part of AUT-MIPS Project
+-- Contributers: Pooya Parsa <pooya@pi0.ir>, Javad Hashemi
+-- Released Under GNU General Public License GPL V3
+
 -- SHLONE
 -- Shift 16bit input left by one
 
